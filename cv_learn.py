@@ -1,6 +1,19 @@
 import os
 import cv2
 
+image_path = os.path.join(".", "image.jpg")
+image  = cv2.imread(image_path)
+details = list(image.shape)
+
+cropped_image = image[123:200, 123:200]
+resized_image = cv2.resize(image, (round(details[0]/2), round(details[1]/2)))
+cv2.imshow('resized_image', resized_image)
+cv2.waitKey(0)
+
+"""
+import os
+import cv2
+
 video_path = os.path.join('.', "cutout.mp4")
 video = cv2.VideoCapture(video_path)
 
@@ -18,6 +31,7 @@ while rel:
     
 video.release()
 cv2.destroyAllWindows()
+"""
 
 """import os
 import cv2
