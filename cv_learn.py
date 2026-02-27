@@ -7,7 +7,10 @@ details = list(image.shape)
 
 cropped_image = image[123:200, 123:200]
 resized_image = cv2.resize(image, (round(details[0]/2), round(details[1]/2)))
+#converted_image = cv2.cvtColor(resized_image, cv2.COLOR_BGR2HLSCOLOR_BGR2HLS)
+blurred_image  = cv2.blur(resized_image, (7,7))
 cv2.imshow('resized_image', resized_image)
+cv2.imshow('blurred_image', blurred_image)
 cv2.waitKey(0)
 
 """
