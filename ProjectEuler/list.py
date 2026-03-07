@@ -45,6 +45,3 @@ if __name__ == "__main__":
     list.insert_end(0)
     list.insert_begining(0)
     list.print()
-    myarray = [5,2,7,3,5,7,3,2]
-    myarray.sort()
-    print(myarray.shape())

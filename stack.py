@@ -38,6 +38,12 @@ class Stack:
 
 if __name__ == "__main__":
     stack = Stack()
-
+    stack.insert(1)
+    stack.insert(2)
+    stack.insert(3)
+    stack.insert(4)
+    stack.insert(5)
+    stack.insert(6)
+    stack.insert(7)
     stack.remove()
     stack.print()
